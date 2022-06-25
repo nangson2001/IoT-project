@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txv_tai_khoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t_i_kho_n"
+        android:textSize="25sp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/edt_tai_khoan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_tai_khoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/nh_p_t_i_kho_n"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txv_tai_khoan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/txv_tai_khoan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_t_kh_u"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/txv_tai_khoan"
+        app:layout_constraintTop_toBottomOf="@id/txv_tai_khoan"
+        android:id="@+id/txv_mat_khau"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/nh_p_m_t_kh_u"
+        android:id="@+id/edt_mat_khau"
+        app:layout_constraintTop_toBottomOf="@id/edt_tai_khoan"
+        app:layout_constraintStart_toStartOf="@id/edt_tai_khoan"
+        app:layout_constraintBaseline_toBaselineOf="@id/txv_mat_khau"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ng_nh_p"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_mat_khau"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_dang_nhap"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

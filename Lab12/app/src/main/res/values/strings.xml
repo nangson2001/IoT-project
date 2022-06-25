@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My project</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="nh_p_m_t_kh_u">Nhập mật khẩu</string>
+    <string name="m_t_kh_u">Mật khẩu:</string>
+    <string name="nh_p_t_i_kho_n">Nhập tài khoản</string>
+    <string name="t_i_kho_n">Tài khoản:</string>
+</resources>
